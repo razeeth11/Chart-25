@@ -48,6 +48,15 @@ body{
   margin-top: 20px;
 }
 
+@media screen and (max-width:1000px){
+ 
+  .cards{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+}
 
 
 @media screen and (max-width:900px){
