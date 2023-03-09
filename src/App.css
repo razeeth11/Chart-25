@@ -1,0 +1,104 @@
+body{
+  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  margin-top: 50px;
+}
+
+*{
+  margin: 0%;
+}
+
+.App{
+  width: 600px;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.432);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.432);
+  border-radius: 5px;
+  padding:15px;
+  font-weight: 500;
+  width:200px;
+  border-left: 4px solid rgb(0, 144, 192);
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 20px;
+}
+
+.RoundChart{
+  width: 25% ;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.432);
+  border-radius: 5px;
+  padding:15px;
+}
+
+.Main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content:right;
+  margin-top: 20px;
+}
+
+
+
+@media screen and (max-width:900px){
+  
+  .App{
+    margin: auto;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.432);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .Main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .RoundChart{
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.432);
+    border-radius: 5px;
+    padding:15px;
+  }
+
+}
+
+@media screen and (max-width:600px){
+  
+  .App{
+    margin: auto;
+    max-width: 100%;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.432);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .Main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 490px){
+  
+   .Card{
+    margin: auto;
+    width: 80%;
+   } 
+
+}
