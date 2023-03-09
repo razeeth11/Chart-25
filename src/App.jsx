@@ -16,6 +16,7 @@ import {
 } from 'chart.js';
 import { Line, Doughnut } from 'react-chartjs-2';
 import faker from 'faker';
+import './App.css'
 
 
 ChartJS.register(
@@ -123,5 +124,34 @@ export function Card({earnings,amount,icon}){
   )
 }
 
+export const source = {
+  labels: ['Social', 'Referral', 'Direct'],
+  datasets: [
+    {
+      fill : true,
+      label: '# of Votes',
+      data: [50,30,200],
+      width: '30px',
+      backgroundColor: [
+        'rgba(255, 99, 132)',
+        'rgba(54, 162, 235)',
+        'rgba(255, 206, 86)',
+      ],
+      borderColor: [
+        'white',
+        'white',
+        'white',
+      ]
+    },
+  ],
+};
+
+export function RoundChart() {
+  return(
+    <div className='RoundChart'>
+        <Doughnut data={source} />
+    </div>
+  )
+}
 
 
